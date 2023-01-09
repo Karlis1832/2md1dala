@@ -7,6 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap'); </style>
     <title>Document</title>
 </head>
 <body>
@@ -295,8 +299,26 @@
                 </span>
             </div>
         </div>
-        <div class="works">
-            <img class="projects" src="./assets/images/Projects.png" alt="">
+        <div class="grid">
+            <div class="item1">
+                <img src="./assets/images/Project Cover 1.jpg" alt="">
+            </div>
+            <div class="item2">
+                <img src="./assets/images/Project Cover 2.jpg" alt="">
+            </div>
+            <div class="item3">
+                <img src="./assets/images/Project Cover 3.jpg" alt="">
+            </div>
+            <div class="item4">
+                <img src="./assets/images/Project Cover 4.jpg" alt="">
+            </div>
+            <div class="item5">
+                <img src="./assets/images/Project Cover 5.jpg" alt="">
+            </div>
+            <div class="item6">
+                <img src="./assets/images/Project Cover 6.jpg" alt="">
+            </div>
+        </div>
         </div>
         <div class="buttons3">
             <div class="buttonblue">
@@ -360,26 +382,26 @@
                             <input type="checkbox">
                             <span class="slider"></span> 
                         </label> 
-                        <span class="sub">Subscribe to News </span><br>
+                        <span class="font sub">Subscribe to News </span><br>
                     </div>
                     
                 </div>
                 <div class="formbottom">
                     <input type="submit" value="Sign In">
                     <div class="forgot marginbottom">
-                        <span class="forgotpw">Forgot your password?</span>
+                        <span class="font forgotpw">Forgot your password?</span>
                     </div>
                     <div class="line marginbottom"></div>
-                    <div class="continuetext marginbottom">
+                    <div class=" fontcontinuetext marginbottom">
                         or continue with
                     </div>
                     <div class="buttonbrands">
-                        <div class="google ">
+                        
                             <button class="btndesign">G</button>
-                        </div>
-                        <div class="FB">
+                        
+                        
                             <button class="btndesign">FB</button>
-                        </div>
+                        
                     </div>
                 </div>
             </form>
@@ -389,30 +411,207 @@
         <form class="Contactus">
             <h1 class="header2">Contact us</h1>
             <div class="inputfields">
-                <label> Your name <br>
-                        <input type="text" placeholder="Your name" required> <br>
-                </label>
-                <label> Your surname <br>
-                        <input type="text" placeholder="Your surname" required> <br>
-                </label>
-                <label> Your phone number <br>
+                <div class="namesrnm">
+                    <label class="Yourname width50 font"> Your name <br>
+                            <input type="text" placeholder="Your name" required> <br>
+                    </label>
+                    <label class="phonenumber font width50"> Your phone number <br>
                         <input type="number" placeholder="2856...." required> <br>
                 </label>
-                <label>
-                    Your age <br>
-                        <input type="number" placeholder="0-99" required> <br>
-                </label>
+                </div>
+                
+                <div class="phoneage">
+                    <label class="srnm font"> Your surname <br>
+                        <input type="text" placeholder="Your surname" required> <br>
+                    </label>
+                    <label class="age font">
+                        Your age <br>
+                            <input type="number" placeholder="0-99" required> <br>
+                    </label>
+                </div>
             </div>
             <div class="subscribe">
                 <input type="checkbox"> 
-                <span class="checkboxtext">Subscribe to News</span>
+                <span class="checkboxtext font2">Subscribe to News</span>
             </div>
             <div class="messagepart">
-                <label> Message
-                <textarea name="paragraph_text" cols="50" rows="10" placeholder="Type Message"></textarea>
-                </label>
+                <div class="messagepart__message">
+                    <span class="message font2">Message</span>
+                </div>
+                <textarea name="paragraph_text" cols="50" style="max-width:100%; min-width: 100%;" placeholder="Type Message"></textarea>
+            </div>
+            <div class="btnsubmit font2">
+                <button class="btn font2">Submit</button>
             </div>
         </form> 
     </section>
+    <section class="3rd">
+        <form class="purpleform">
+            <div class="purple">
+                <div class="purple__heading">
+                    <h2 class="heading font">Contact Information</h2>
+                </div>
+                <div class="purple__p font2">
+                    <span class="p"> Here’s some additional support text to help set user expectations.</span>
+                </div>
+                <div class="purple__pnumber flex">
+                    <div class="pnumber__icon">
+                        <img class="icon iconsize" src="./assets/images/iphone-x.png" alt="">
+                    </div>
+                    <span class="pnumber font2">123·456·7890</span>
+                </div>
+                <div class="purple__e-mail flex">
+                    <div class="e-mail__icon">
+                        <img class="icon iconsize" src="./assets/images/e-mail.png" alt="">
+                    </div>
+                    <span class="e-mail font2">support@minerva.com</span>
+                </div>
+            </div>
+            <div class="white">
+                <div class="white__head">
+                    <h2 class="head font">
+                        Contact Us
+                    </h2>
+                </div>
+                <div class="inputs flex">
+                    <div class="nameadress width50">
+                        <label class="inputs__yrname font2"> Your name <br>
+                            <input type="text" placeholder="Your name" required> <br>
+                        </label>
+                        <label class="inputs__yraddress font2"> Your address <br>
+                            <input type="text" placeholder="Your address" required> <br>
+                        </label>
+                    </div>
+                    <div class="teldate ">
+                        <label class="inputs__yraddress font2"> Your phone number <br>
+                            <input type="tel" placeholder="Your phone number" required> <br>
+                        </label>
+                        <label class="inputs__yraddress font2"> Preferred delivery date <br>
+                            <input type="date" placeholder="Preferred delivery date" required> <br>
+                        </label>
+                    </div>
+                </div>
+                <div class="last2inputs">
+                    <div class="last2inputs__select" style="width:200px;">
+                        <label class="select__label font2"> Preferred delivery car
+                            <select>
+                            <option value="0">Select car:</option>
+                            <option value="1">Audi</option>
+                            <option value="2">BMW</option>
+                            <option value="3">Citroen</option>
+                            <option value="4">Ford</option>
+                            <option value="5">Honda</option>
+                            <option value="6">Jaguar</option>
+                            <option value="7">Land Rover</option>
+                            <option value="8">Mercedes</option>
+                            <option value="9">Mini</option>
+                            <option value="10">Nissan</option>
+                            <option value="11">Toyota</option>
+                            <option value="12">Volvo</option>
+                            </select>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="last2inputs__textarea">
+                        <span class="last2inputs__textareheading font2">Notes for delivery</span>
+                        <textarea columns="30" style="max-width:100%; min-width: 100%;" placeholder="Type Notes" ></textarea>
+                    </div>
+                    <div class="btnsubmit font2">
+                        <button class="btn font2">Submit</button>
+                    </div>
+                </div>
+        </form>
+    </section>
+    <section class="chout">
+        <form class="checkout">
+            <div class="yrorder__heading2">
+                <h2 class="heading2 font"> Checkout</h2>
+            </div>
+            <div class="subheadings flex font">
+                <div class="yrorder__subheading width50">
+                    <h3 class="subheading"> Your order</h3>
+                </div>
+                <div class="det__subheading1">
+                    <h3 class="subheading1 ">Delivery Details</h3>
+                </div>
+            </div>
+            <div class="yrorder">
+                <div class="yourorder width50">    
+                    <div class="yrorder__product font2">
+                        <div class="product__name">
+                            <span class="name">Eggshell Plant Pot</span>
+                        </div>
+                        <div class="product__details">
+                            <div class="details__1">
+                                <span class="1__size">Size: Medium</span>
+                            </div>
+                            <div class="details__2">
+                                <span class="2__qty">Qty: 1</span>
+                            </div>
+                            <div class="details__3">
+                                <span class="3__price">$25.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="deliv__det width50">
+                    <div class="det__customer font2 width50">
+                        <div class="customer__namesrnm">
+                            <span class="namesrnm">Adam Sandler</span>
+                        </div>
+                        <div class="customer__address1">
+                            <span class="address1">1234 Fake St</span>
+                        </div>
+                        <div class="customer__city">
+                            <span class="city">Milwaukee, WI 53203</span>
+                        </div>
+                    </div>
+                    <div class="det__shipping font2">
+                        <div class="shipping__speed">
+                            <span class="speed">Shipping Speed</span>
+                        </div>
+                        <div class="shipping__type">
+                            <span class="type">$7.00 No Rush Shipping</span>
+                        </div>
+                        <div class="shipping__date">
+                            <span class="date">Arrives by 1/16/22</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="paymeth">
+                <h3 class="paymentmethod font2">Payment Method</span>
+            </div>
+            <div class="userinputs flex">
+                <label class="Yourname font"> Your name <br>
+                    <input type="text" placeholder="Your name" required> <br>
+                </label>
+                <label class="srnm font"> Your surname <br>
+                    <input type="text" placeholder="Your surname" required> <br>
+                </label>
+                <label class="select__label font srnm" required> Payment method <br>
+                    <select class="select font2">
+                    <option value="0">Select payment method:</option>
+                    <option value="1">Swedbank</option>
+                    <option value="2">Paypal</option>
+                    <option value="3">Crypto</option>
+                    <option value="4">Cash</option>
+                    </select>
+                </label> <br>
+            </div>
+            <div class="btnsubmit font2">
+                    <button class="btn font2">Continue</button>
+            </div>
+             
+            
+        </form>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 </body>
 </html>
